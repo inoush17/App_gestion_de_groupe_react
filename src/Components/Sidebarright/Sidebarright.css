@@ -1,0 +1,24 @@
+.container-sideright{
+    background-color: #ffffffab;
+    height: 81vh;
+    width: 20%;
+    text-align: center;
+    margin-top: 4%;
+    padding-top: 4%;
+}
+
+.container-sideright img{
+    text-align: center;
+}
+
+.full-button{
+    margin-top: 10px;
+    line-height: 20px;
+}
+
+.separator{
+    background-color: #000;
+    height: 2px;
+    margin: 0 20px 0 20px;
+    margin-top: 10%;
+}

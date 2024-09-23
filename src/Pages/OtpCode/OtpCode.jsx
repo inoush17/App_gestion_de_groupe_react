@@ -1,5 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
+import Input from '../../Components/Input/Input';
+import Button from '../../Components/Button/Button';
 
 export default function OtpCode() {
     const [OtpCode, setOtpCode] = useState('')
@@ -17,7 +20,7 @@ export default function OtpCode() {
         formData.set("email", params.email);
 
         const response = await axios.post(
-            'http://127.0.0.1:8000/api/v1.0.0/otp_code', 
+            'http://127.0.0.1:8000/api/v1.0.0/otp-code', 
             formData);
 
         if (response.data.success) {
@@ -41,16 +44,16 @@ export default function OtpCode() {
     };
 
     return (
-        <div>
+        <div className='login-container'>
             <ToastContainer />
-            <div>
+            <div className='login-container2'>
                 <div>
                     <img src={'/Images/gestion_de_groupe.png'} alt="" />
                 </div>
-                <div>
-                    <div>
+                <div className='login-container5'>
+                    <div className='login-container3'>
                         <h3>Welcome back</h3>
-                        <img src={'/Images/app_gestion_de_groupe.png'} alt="" width={30} />
+                        <img src={'/Images/app_gestion_de_groupe.png'} alt="" width={50} />
                     </div>
                     <form onSubmit={handleSubmit}>
                         <Input
@@ -61,11 +64,11 @@ export default function OtpCode() {
                             onChange={(e) => {
                                 setOtpCode(e.target.value)
                             }}
-                        />
+                        /> <br />
 
                         <div>
                             <Button disabled={isLoading} type={'submit'} text={isLoading ? 'Chargement ...' : 'Soumettre'} />
-                        </div><br />
+                        </div>
                     </form>
                 </div>
             </div>

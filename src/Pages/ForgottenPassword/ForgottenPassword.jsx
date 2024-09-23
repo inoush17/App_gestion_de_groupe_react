@@ -42,16 +42,16 @@ export default function ForgottenPassword() {
     };
 
     return (
-        <div>
+        <div className='login-container'>
             <ToastContainer />
-            <div>
+            <div className='login-container2'>
                 <div>
                     <img src={'/Images/gestion_de_groupe.png'} alt="" />
                 </div>
-                <div>
-                    <div>
+                <div className='login-container5'>
+                    <div className='login-container3'>
                         <h3>Welcome back</h3>
-                        <img src={'/Images/app_gestion_de_groupe.png'} alt="" width={30} />
+                        <img src={'/Images/app_gestion_de_groupe.png'} alt="" width={50} />
                     </div>
                     <form onSubmit={handleSubmit}>
                         <Input
@@ -62,11 +62,11 @@ export default function ForgottenPassword() {
                             onChange={(e) => {
                                 setEmail(e.target.value)
                             }}
-                        />
+                        /> <br />
 
                         <div>
                             <Button disabled={isLoading} type={'submit'} text={isLoading ? 'Chargement ...' : 'Soumettre'} />
-                        </div><br />
+                        </div>
                     </form>
                 </div>
             </div>

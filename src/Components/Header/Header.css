@@ -1,0 +1,9 @@
+.logo{
+    background-color: #000;
+    border-bottom: 1px solid #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    padding-left: 10px;
+}

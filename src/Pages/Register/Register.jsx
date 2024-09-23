@@ -64,72 +64,75 @@ export default function Register() {
     };
 
     return (
-        <div>
+        <div className='login-container'>
             <ToastContainer stacked />
 
-            <div>
+            <div className='login-container2'>
                 <div>
                     <img src={'/Images/gestion_de_groupe.png'} alt="" />
                 </div>
-                <div>
-                    <div>
+
+
+
+                <div className='login-container5'>
+                    <div className='login-container3'>
                         <h3>Welcome back</h3>
                         <img src={'/Images/app_gestion_de_groupe.png'} alt="" width={50} />
                     </div>
-                    <form action="" onSubmit={handleSubmit}>
-                        <Input
-                            placeHolder={'Nom d\'affichage'}
-                            reference={"name"}
-                            type={"text"}
-                            value={name}
-                            onChange={(e) => {
-                                setName(e.target.value);
-                            }}
-                        />
-                        <Input
-                            placeHolder={"E_mail ..."}
-                            reference={"email"}
-                            type={"text"}
-                            value={email}
-                            onChange={(e) => {
-                                setEmail(e.target.value);
-                            }}
-                        />
-                        <Input
-                            placeHolder={"Mot de passe"}
-                            reference={"password"}
-                            type={"password"}
-                            value={password}
-                            onChange={(e) => {
-                                setPassword(e.target.value);
-                            }}
-                        />
+                    <div>
+                        <form action="" onSubmit={handleSubmit}>
+                            <div>
+                                <Input
+                                    placeHolder={'Nom d\'affichage'}
+                                    reference={"name"}
+                                    type={"text"}
+                                    value={name}
+                                    onChange={(e) => {
+                                        setName(e.target.value);
+                                    }}
+                                />
+                                <Input
+                                    placeHolder={"E_mail ..."}
+                                    reference={"email"}
+                                    type={"text"}
+                                    value={email}
+                                    onChange={(e) => {
+                                        setEmail(e.target.value);
+                                    }}
+                                />
+                                <Input
+                                    placeHolder={"Mot de passe"}
+                                    reference={"password"}
+                                    type={"password"}
+                                    value={password}
+                                    onChange={(e) => {
+                                        setPassword(e.target.value);
+                                    }}
+                                />
 
-                        {/* Afficher les données saisient dans le champ en bat de l'input
+                                {/* Afficher les données saisient dans le champ en bat de l'input
         <div>{password}</div> */}
 
-                        <Input
-                            placeHolder={"confirmation du mot de passe"}
-                            reference={"passwordConfirm"}
-                            type={"password"}
-                            value={passwordConfirm}
-                            onChange={(e) => {
-                                setPasswordConfirm(e.target.value);
-                            }}
-                        /> <br />
+                                <Input
+                                    placeHolder={"confirmation du mot de passe"}
+                                    reference={"passwordConfirm"}
+                                    type={"password"}
+                                    value={passwordConfirm}
+                                    onChange={(e) => {
+                                        setPasswordConfirm(e.target.value);
+                                    }}
+                                />
+                            </div><br />
 
-                        <div>
-                            <Button disabled={isLoading} type={'submit'} text={isLoading ? 'Chargement ...' : 'S\'inscrire'} />
-                        </div><br />
-                        <div>
-                            <h4>Déjà inscrit.e ?</h4>
-                            <Link className='link' to={'/login'}>Se connecter</Link>
-                        </div>
-                        <div>
-                            <h4>Mot de passe oublié ?</h4>
-                            <Link className='link' to={'/forgottenpassword'}> Réinitialisez-le</Link>
-                        </div>
-                    </form>
+                            <div>
+                                <Button disabled={isLoading} type={'submit'} text={isLoading ? 'Chargement ...' : 'S\'inscrire'} />
+                            </div><br />
+                            <div className='login-container4'>
+                                <h4>Déjà inscrit.e ?</h4>
+                                <Link className='link' to={'/login'}>Se connecter</Link>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>

@@ -1,4 +1,5 @@
 import React from 'react'
+import './Input.css'
 
 export default function Input(
     {
@@ -12,7 +13,7 @@ export default function Input(
     return (
         <div>
             <label htmlFor={reference}>{label}</label><br />
-            <input
+            <input className='input-login'
                 type={type}
                 value={value}
                 placeholder={placeHolder}

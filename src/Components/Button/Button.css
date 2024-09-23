@@ -1,0 +1,19 @@
+.button-login{
+    width: 118%;
+    background-color: #77021D;
+    color: #fff;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.button2{
+    background-color: #77021D;
+    color: #fff;
+    padding: 8px 0;
+    border: none;
+    border-radius: 5px;
+    width: 80%;
+    cursor: pointer;
+}
