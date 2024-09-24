@@ -1,0 +1,21 @@
+.container-list a{
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.container-list img{
+    aspect-ratio: 1/1;
+    border-radius: 30px;
+    width: 55px;
+}
+
+.user-list{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}

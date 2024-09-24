@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom';
-import { ToastContainer } from 'react-toastify';
+import { toast, ToastContainer } from 'react-toastify';
 import Input from '../../Components/Input/Input';
 import Button from '../../Components/Button/Button';
+import "react-toastify/dist/ReactToastify.css";
+import axios from 'axios';
 
 export default function OtpCode() {
     const [OtpCode, setOtpCode] = useState('')

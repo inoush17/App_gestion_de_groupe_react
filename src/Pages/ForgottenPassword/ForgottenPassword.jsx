@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { ToastContainer } from 'react-toastify'
+import { toast, ToastContainer } from 'react-toastify'
 import Input from '../../Components/Input/Input'
 import Button from '../../Components/Button/Button'
+import "react-toastify/dist/ReactToastify.css";
 import axios from 'axios'
 
 export default function ForgottenPassword() {
@@ -30,7 +31,7 @@ export default function ForgottenPassword() {
             localStorage.setItem('token', authTk)
 
             setTimeout(function () {
-                navigate('/otpcode')
+                navigate(`/otpcode/${email}`)
             }, 3000);
             console.log(response.data)
 

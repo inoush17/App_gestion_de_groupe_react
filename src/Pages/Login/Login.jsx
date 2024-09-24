@@ -3,7 +3,8 @@ import React, { useState } from 'react'
 import Input from '../../Components/Input/Input'
 import Button from '../../Components/Button/Button'
 import { Link, useNavigate } from 'react-router-dom'
-import { ToastContainer } from 'react-toastify'
+import { toast, ToastContainer } from 'react-toastify'
+import "react-toastify/dist/ReactToastify.css";
 import axios from 'axios'
 import './Login.css'
 
@@ -51,9 +52,10 @@ export default function Login() {
             <ToastContainer />
             <div className='login-container2'>
                 <div>
+                    <img src={'/Images/gestion_de_groupe.png'} alt="" />
                 </div>
 
-                
+
                 <div className='login-container5'>
                     <div className='login-container3'>
                         <h3 className='login-title'>Welcome back</h3>

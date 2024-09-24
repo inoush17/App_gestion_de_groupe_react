@@ -3,7 +3,8 @@ import { useNavigate } from 'react-router-dom'
 import Input from '../../Components/Input/Input'
 import Button from '../../Components/Button/Button'
 import axios from 'axios'
-import { ToastContainer } from 'react-toastify'
+import { toast, ToastContainer } from 'react-toastify'
+import "react-toastify/dist/ReactToastify.css";
 
 export default function NewPassword() {
     const [newpassword, setNewPassword] = useState('')
