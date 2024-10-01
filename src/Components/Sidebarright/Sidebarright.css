@@ -9,6 +9,9 @@
 
 .container-sideright img{
     text-align: center;
+    border-radius: 35px;
+    aspect-ratio: 1/1;
+    width: 70px;
 }
 
 .full-button{
@@ -17,7 +20,7 @@
 }
 
 .separator{
-    background-color: #000;
+    background-color: #0000007b;
     height: 2px;
     margin: 0 20px 0 20px;
     margin-top: 10%;

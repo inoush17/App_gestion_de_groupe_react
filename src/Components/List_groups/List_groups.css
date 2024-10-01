@@ -1,0 +1,24 @@
+.container-list{
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    gap: 10px;
+}
+
+.group-container{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.name{
+    font-weight: bolder;
+    font-size: 18px;
+    color: #77021D;
+}
+
+.email{
+    color: #fff;
+    font-weight: bolder;
+    font-size: 16px;
+}

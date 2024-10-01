@@ -1,0 +1,17 @@
+.container-file{
+    background-color: #fff;
+    height: 90vh;
+    width: 50%;
+    margin: auto;
+    margin-left: 30px;
+    overflow-y: scroll;
+}
+
+.file-small{
+    background-color: #00000075;
+    display: flex;
+    justify-content: space-around;
+}
+.file-small img{
+cursor: pointer;
+}

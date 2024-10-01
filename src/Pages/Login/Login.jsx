@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 
-import Input from '../../Components/Input/Input'
-import Button from '../../Components/Button/Button'
-import { Link, useNavigate } from 'react-router-dom'
-import { toast, ToastContainer } from 'react-toastify'
+import Input from '../../Components/Input/Input';
+import Button from '../../Components/Button/Button';
+import { Link, useNavigate } from 'react-router-dom';
+import { toast, ToastContainer } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
 import axios from 'axios'
 import './Login.css'
