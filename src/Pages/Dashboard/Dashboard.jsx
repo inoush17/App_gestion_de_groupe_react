@@ -7,6 +7,8 @@ import './Dashboard.css'
 
 export default function Dashboard() {
 
+    const [select, setSelect] = useState([]);
+
     const [id, setId] = useState([])
     const handlerCurrentData = (id) => {
         setId(id)
@@ -24,9 +26,12 @@ export default function Dashboard() {
             <div className='container'>
                 <Sidebarleft
                     id={id}
+                    setSelect={setSelect}
                 />
 
-                <Centerbar />
+                <Centerbar
+                    select={select}
+                />
 
                 <Sidebarright currentData={handlerCurrentData} />
             </div>

@@ -6,7 +6,7 @@ import './List_groups.css'
 import axios from 'axios';
 import { Await } from 'react-router-dom';
 
-export default function List_groups() {
+export default function List_groups({ setSelect }) {
     const [activeGroup, setActiveGroup] = useState(null);
     const [groups, setGroups] = useState(['']);
 
@@ -23,16 +23,24 @@ export default function List_groups() {
             })
     }
 
+    const onGroupClick = (group) => {
+        setSelect(() => group)
+    }
+
     useEffect(() => {
         getGroups()
     })
 
 
     return (
-        <div onClick={() => setActiveGroup(groups)}>
+        <div>
 
             {groups.map((group, index) => (
-                <div key={index} className='container-list'>
+                <div
+                    key={index}
+                    className='container-list'
+                    onClick={() => onGroupClick(group)}
+                >
 
                     <div>
                         <img src={'/Images/profil.png'} alt="" />
