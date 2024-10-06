@@ -17,6 +17,19 @@
     border-radius: 5px;
     width: 80%;
     cursor: pointer;
+    transition: 1.5s;
+    font-weight: bolder;
+}
+
+.button2:hover{
+    background-color: #fff;
+    color: #77021D;
+    padding: 8px 0;
+    border: none;
+    border-radius: 5px;
+    width: 80%;
+    cursor: pointer;
+    font-weight: bolder;
 }
 
 .button3{
@@ -27,4 +40,23 @@
     cursor: pointer;
     font-size: 18px;
     font-weight: bolder;
+}
+
+.button4{
+    background-color: #77021D;
+    padding: 10px 18px;
+    color: #fff;
+    font-weight: bolder;
+    border-radius: 6px;
+    transition-duration: 1.5s;
+    box-shadow: 5px 4px 5px 0px;
+    border: none;
+    cursor: pointer;
+}
+.button4:hover{
+    background-color: #fff;
+    padding: 10px 18px;
+    color: #77021D;
+    font-weight: bolder;
+    border-radius: 6px;
 }

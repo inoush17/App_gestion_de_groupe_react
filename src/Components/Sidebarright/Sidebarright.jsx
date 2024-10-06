@@ -2,7 +2,7 @@ import React from 'react'
 import './Sidebarright.css'
 import Button2 from '../Button/Button2'
 import CreateGroup from '../CreateGroup/CreateGroup'
-import CreateMember from '../CreateMember/CreateMember'
+import AddMemberGroup from '../AddMemberGroup/AddMemberGroup'
 
 export default function Sidebarleft({ currentData }) {
 
@@ -25,7 +25,7 @@ export default function Sidebarleft({ currentData }) {
                 <br />
                 <CreateGroup />
                 <br />
-                <CreateMember />
+                <AddMemberGroup />
             </div>
         </div>
     )

@@ -6,10 +6,11 @@
     color: #fff;
     background-color: #000;
     border: none;
-    height: 40vh;
+    height: 35vh;
     position: absolute;
     left: 34%;
-    top: 30%;
+    top: 35%;
+    padding-top: 5%;
 }
 
 .dialogue h1{

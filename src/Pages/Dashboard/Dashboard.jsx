@@ -19,6 +19,10 @@ export default function Dashboard() {
         currentData(id)
     }
 
+    const handlerSetSelect  = (data) => {
+        setSelect(data)
+    }
+
     return (
         <div className='body'>
             <Header />
@@ -26,7 +30,7 @@ export default function Dashboard() {
             <div className='container'>
                 <Sidebarleft
                     id={id}
-                    setSelect={setSelect}
+                    setSelect={handlerSetSelect}
                 />
 
                 <Centerbar

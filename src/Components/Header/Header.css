@@ -1,9 +1,18 @@
 .logo{
-    background-color: #000;
-    border-bottom: 1px solid #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     color: #fff;
-    padding-left: 10px;
+    padding-bottom: 5px;
+}
+
+.header-logo{
+    display: flex;
+    background-color: #000;
+    border-bottom: 1px solid #fff;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
 }

@@ -3,9 +3,9 @@ import Input2 from "../Input/Input2";
 import Button3 from '../Button/Button3'
 import Button2 from "../Button/Button2";
 
-export default function CreateMember() {
+export default function AddMemberGroup() {
     const [email, setEmail] = useState('')
-    // const [group_id, setGroup_id] = useState('')
+    const [group_name, setGroup_Name] = useState('')
 
     const dialog = useRef();
 
@@ -30,7 +30,7 @@ export default function CreateMember() {
                 </button>
 
                 <h1>
-                    Nouveau Membre !
+                    Ajout au groupe et Invitation !
                 </h1>
 
                 <form action="">
@@ -41,12 +41,12 @@ export default function CreateMember() {
                             type={'email'}
                             value={email}
                             onChange={(e) => {
-                                setName(e.target.value)
+                                setEmail(e.target.value)
                             }}
                         /> <br />
 
                         <div>
-                            <Button3 type={'submit'} text={'Créer'} />
+                            <Button3 type={'submit'} text={'Ajouter'} />
                         </div>
 
                         <br />
@@ -54,7 +54,7 @@ export default function CreateMember() {
                 </form>
             </dialog>
 
-            <Button2 text={"Nouveau membre"} onClick={openHandler} />
+            <Button2 text={"Ajout de membre aux groupes"} onClick={openHandler} />
         </div>
     );
 }

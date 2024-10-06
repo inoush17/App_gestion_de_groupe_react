@@ -8,6 +8,7 @@
 
 .input-create{
     background-color: #fff;
-    padding: 4px 18px;
+    padding: 8px 18px;
+    border: 2px solid #77021D;
     font-size: 14px;
 }
