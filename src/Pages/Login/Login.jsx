@@ -32,8 +32,11 @@ export default function Login() {
             setIsLoading(false)
 
             const authTk = response.data.data[0].token
+            const userId = response.data.data[0].id
+            console.log(response.data.data[0].token)
 
             localStorage.setItem('token', authTk)
+            localStorage.setItem('user_id', userId)
 
             setTimeout(function () {
                 navigate('/dashboard')

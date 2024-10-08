@@ -4,15 +4,22 @@
     width: 50%;
     margin: auto;
     margin-left: 30px;
+    overflow-y: scroll;
     
 }
 
 .file-small{
-    background-color: #00000075;
+    background-color: #000000c4;
     display: flex;
-    justify-content: space-around;
-    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+    margin-left: 10px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 9px;
 }
+
 .file-small img{
 cursor: pointer;
 }
@@ -20,14 +27,84 @@ cursor: pointer;
 .group-flex{
     display: flex;
     align-items: center;
-    gap: 10px;
     background-color: #77021D;
     color: #fff;
     padding: 10px;
+    justify-content: space-between;
+    position: fixed;
+    width: 48vw ;
+}
+
+.bao {
+    margin-bottom: 100px;
+}
+.group-profil{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.group-flex2{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #000;
+    padding: 10px;
     
+}
+
+.group-flex2 img{
+    aspect-ratio: 1/1;
+    border-radius: 30px;
+    width: 50px;    
 }
 .group-flex img{
     aspect-ratio: 1/1;
     border-radius: 30px;
     width: 50px;   
 }
+
+.file{
+    background-color: #000000bb;
+    color: #fff;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    line-height: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 45%;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.file-space{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.file-space a{
+    text-decoration: none;
+    color: #77021D;
+    font-weight: lighter;
+}
+
+.dialogue2{
+    min-width: 300px;
+    padding: 30px;
+    border-radius: 8px;
+    color: #fff;
+    background-color: #000;
+    border: none;
+    position: absolute;
+    left: 46%;
+    top: 15%;
+}
+
+.dialogue2 h1{
+    font-size: 20px;
+    font-weight: bolder;
+}
+

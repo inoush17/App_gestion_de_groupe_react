@@ -5,6 +5,7 @@ import React, { useEffect, useState } from 'react'
 import './List_groups.css'
 import axios from 'axios';
 import { Await } from 'react-router-dom';
+import AddMemberGroup from '../AddMemberGroup/AddMemberGroup';
 
 export default function List_groups({ setSelect }) {
     const [activeGroup, setActiveGroup] = useState(null);
@@ -12,7 +13,9 @@ export default function List_groups({ setSelect }) {
 
 
     const getGroups = async () => {
-        const response = await axios.get('http://127.0.0.1:8000/api/v1.0.0/groups')
+        const response = await axios.get('http://127.0.0.1:8000/api/v1.0.0/groups', {
+            headers: { 'Authorization': `Bearer ` + localStorage.getItem('token') }
+        })
             .then((res) => {
                 setGroups(res.data.data[0]);
 
@@ -25,6 +28,7 @@ export default function List_groups({ setSelect }) {
 
     const onGroupClick = (group) => {
         setSelect(() => group)
+        localStorage.setItem('group_id', group.id)
     }
 
     useEffect(() => {
@@ -34,14 +38,12 @@ export default function List_groups({ setSelect }) {
 
     return (
         <div>
-
             {groups.map((group, index) => (
                 <div
                     key={index}
                     className='container-list'
                     onClick={() => onGroupClick(group)}
                 >
-
                     <div>
                         <img src={'/Images/profil.png'} alt="" />
                     </div>
@@ -52,6 +54,7 @@ export default function List_groups({ setSelect }) {
                     </div>
                 </div>
             ))
+
             }
         </div>
     )

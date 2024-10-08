@@ -25,7 +25,7 @@ export default function Sidebarleft({ currentData }) {
                 <br />
                 <CreateGroup />
                 <br />
-                <AddMemberGroup />
+                <AddMemberGroup selectGroup={currentData} />
             </div>
         </div>
     )

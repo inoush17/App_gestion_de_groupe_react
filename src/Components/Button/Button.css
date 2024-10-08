@@ -60,3 +60,13 @@
     font-weight: bolder;
     border-radius: 6px;
 }
+
+.button5{
+    background-color: #fff;
+    padding: 8px 12px;
+    color: #77021D;
+    font-weight: bolder;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+}

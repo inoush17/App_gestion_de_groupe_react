@@ -9,7 +9,9 @@ export default function List_users() {
 
 
     const getList = async () => {
-        const response = await axios.get('http://127.0.0.1:8000/api/v1.0.0/users')
+        const response = await axios.get('http://127.0.0.1:8000/api/v1.0.0/users', {
+            headers: {'Authorization': `Bearer ` + localStorage.getItem('token')}
+        })
             .then((res) => {
                 setList(res.data.data[0]);
 

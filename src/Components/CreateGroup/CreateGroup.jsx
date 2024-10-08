@@ -9,7 +9,6 @@ import Button2 from "../Button/Button2";
 export default function CreateGroup() {
     const [name, setName] = useState('')
     const [description, setDescription] = useState('')
-    // const [adminId, setAdminId] = useState('');
 
     const dialog = useRef();
 
@@ -29,12 +28,11 @@ export default function CreateGroup() {
 
         formData.append('name', name)
         formData.append('description', description)
-        // formData.set('admin_id', admin_id)
 
         try {
             const response = await axios.post('http://127.0.0.1:8000/api/v1.0.0/create-group', formData, {
-                headers:{
-                    Authorization: " Bearer " + localStorage.getItem("token")
+                headers: {
+                    'Authorization': `Bearer ` + localStorage.getItem("token")
                 }
             });
             console.log('Group created:', response.data);
