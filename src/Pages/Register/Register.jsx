@@ -43,7 +43,7 @@ export default function Register() {
             localStorage.setItem('token', authTk)
 
             setTimeout(function () {
-                navigate('/dashboard')
+                navigate('/login')
             }, 3000);
             console.log(response.data)
 

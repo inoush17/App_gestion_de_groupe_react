@@ -47,8 +47,8 @@ export default function Login() {
             toast.error("email ou mot de passe incorrect")
             setIsLoading(false)
 
-        }
-    };
+        };
+    }
 
     return (
         <div className='login-container'>

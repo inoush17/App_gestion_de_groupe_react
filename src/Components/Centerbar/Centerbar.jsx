@@ -23,8 +23,8 @@ export default function Centerbar({ select }) {
             .then((res) => res.data
             )
             .then((data) => {
-                console.log("Member : ")
-                console.log(data.data[0])
+                // console.log("Member : ")
+                // console.log(data.data[0])
                 setMembers(data.data[0])
             })
             .catch((err) => console.log(err))
@@ -56,7 +56,6 @@ export default function Centerbar({ select }) {
                     }
                 });
 
-                // console.log(response.data)
                 console.log(response.data.file_sharing_groups)
                 setFileList(response.data.file_sharing_groups);
             } catch (error) {
@@ -73,14 +72,14 @@ export default function Centerbar({ select }) {
 
 
     const handleFileChange = (e) => {
-        const selectedFile = e.target.files[0]; // Récupérer le premier fichier sélectionné
+        const selectedFile = e.target.files[0]; 
         setFile(selectedFile);
     };
 
     const handleSubmit = async (e) => {
         e.preventDefault();
         if (file) {
-            // Créer un objet FormData
+            
             const userId = localStorage.getItem('user_id');
             console.log(userId)
             const formData = new FormData();
@@ -126,7 +125,7 @@ export default function Centerbar({ select }) {
                     </h1><br />
 
                     <div>
-                        {members.length===0 ? <p>Aucun membre !</p> : <div>
+                        {members.length === 0 ? <p>Aucun membre !</p> : <div>
                             {members.map((member, index) => (
                                 <div key={index}>
                                     <p>

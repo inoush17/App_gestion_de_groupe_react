@@ -29,7 +29,6 @@ export default function AddMemberGroup({ selectGroup }) {
         console.log(group_id);
         console.log(inviteEmail);
         
-
         try {
             const response = await axios.post(`http://127.0.0.1:8000/api/v1.0.0/add-member/${group_id}`, formData, {
                 headers: {
